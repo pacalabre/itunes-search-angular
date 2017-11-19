@@ -8,22 +8,23 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AlbumsComponent {
 
-  searchTerm: any;
+  searchTerm: string;
   albums: any;
 
   constructor(private httpClient: HttpClient) {}
   getInput(event) {
-  	this.searchTerm = event.target.value;
+  	console.log(this.searchTerm);
   }
 
-  makeRequest() {
+  makeRequest(event) {
+  	event.preventDefault();
+  	console.log(event);
+  	this.searchTerm = event.target[0].value;
   	this.httpClient.get('https://itunes.apple.com/search?term=' + this.searchTerm + '&entity=album')
   	.subscribe( (data) => {
   		 this.albums = data;
-  		 console.log(this.albums);
+  		 console.log(data);
   	})
-
   }
-
 
 }

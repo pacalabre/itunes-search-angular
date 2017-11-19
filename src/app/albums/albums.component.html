@@ -1,4 +1,5 @@
-<form (submit)="makeRequest">
+<form (submit)="makeRequest($event)">
 	<input (keyup)="getInput($event)" />
 	<button>Search</button>
 </form>
+<p>You are Searching for</p> {{searchTerm}}
