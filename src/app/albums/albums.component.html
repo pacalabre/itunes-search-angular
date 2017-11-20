@@ -1,15 +1,17 @@
-<form (submit)="makeRequest($event)">
-	<input (keyup)="getInput($event)" />
-	<button>Search</button>
+<form class="search-form" (submit)="makeRequest($event)">
+	<input class="search-form-input" (keyup)="getInput($event)" />
+	<button class="search-form-btn">Search</button>
 </form>
-<p>You are Searching for</p> {{searchTerm}}
-
+<!-- Below here will be a new component-->
+<main class="album-main">
+	<p class="album-show-search">You are Searching for {{searchTerm}}</p> 
 	<ul>
-		<li *ngFor="let album of albums">
+		<li class="album-li" *ngFor="let album of albums">
 			<h3>{{ album.artistName }}</h3>
 			<img src="{{ album.artworkUrl100}}" />
 			<p>{{ album.collectionName }}</p>
-
+			<a class="buy-btn" href={{collectionViewUrl}}><h5 class="buy-btn-h5">Buy</h5></a>
 		</li>
 	</ul>
+</main>
 
