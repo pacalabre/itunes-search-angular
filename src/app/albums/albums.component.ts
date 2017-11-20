@@ -7,9 +7,9 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./albums.component.css']
 })
 export class AlbumsComponent {
-
   searchTerm: string;
-  albums: any;
+  results: any;
+  albums = [];
 
   constructor(private httpClient: HttpClient) {}
   getInput(event) {
@@ -22,9 +22,11 @@ export class AlbumsComponent {
   	this.searchTerm = event.target[0].value;
   	this.httpClient.get('https://itunes.apple.com/search?term=' + this.searchTerm + '&entity=album')
   	.subscribe( (data) => {
-  		 this.albums = data;
-  		 console.log(data);
+  		 this.results = data;
+  		 this.albums =  this.results.results;
+  	     console.log(this.albums);
   	})
+
   }
 
 }

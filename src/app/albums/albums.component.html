@@ -3,3 +3,13 @@
 	<button>Search</button>
 </form>
 <p>You are Searching for</p> {{searchTerm}}
+
+	<ul>
+		<li *ngFor="let album of albums">
+			<h3>{{ album.artistName }}</h3>
+			<img src="{{ album.artworkUrl100}}" />
+			<p>{{ album.collectionName }}</p>
+
+		</li>
+	</ul>
+
