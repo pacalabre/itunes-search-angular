@@ -10,7 +10,7 @@
 			<h3>{{ album.artistName }}</h3>
 			<img src="{{ album.artworkUrl100}}" />
 			<p>{{ album.collectionName }}</p>
-			<a class="buy-btn" href={{collectionViewUrl}}><h5 class="buy-btn-h5">Buy</h5></a>
+			<a class="buy-btn" href="{{ album.collectionViewUrl }}" target=”_blank”><h5 class="buy-btn-h5">Buy</h5></a>
 		</li>
 	</ul>
 </main>

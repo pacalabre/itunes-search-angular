@@ -44,6 +44,10 @@
     padding: 5px 20px;
 }
 
+.buy-btn-h5:hover, .search-form-btn:hover {
+	background-color: #C0392B;
+}
+
 
 @media only screen and (min-width: 767px) {
 
