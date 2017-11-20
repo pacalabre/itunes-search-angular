@@ -1,19 +1,12 @@
 .app-header {
 	background-color: #34495E;
 	color: white;
-/*	height: 300px;*/
 }
 
 .app-header-h2 {
 	text-align: center;
 	font-size: 3rem;
-	padding: 100px ;
+	padding: 60px 0px 100px 0px;
 	font-family: 'Roboto', sans-serif;
 }
 
-@media only screen and (min-width: 767px) {
-	
-	.app-header-h2 {
-		padding: 120px;
-	}
-}

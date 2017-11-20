@@ -4,13 +4,15 @@
 </form>
 <!-- Below here will be a new component-->
 <main class="album-main">
-	<p class="album-show-search">You are Searching for {{searchTerm}}</p> 
+	<p class="album-show-search">You are Searching for "{{searchTerm}}"</p> 
 	<ul>
 		<li class="album-li" *ngFor="let album of albums">
 			<h3>{{ album.artistName }}</h3>
 			<img src="{{ album.artworkUrl100}}" />
 			<p>{{ album.collectionName }}</p>
+			<p>{{ album.collectionPrice }}</p>
 			<a class="buy-btn" href="{{ album.collectionViewUrl }}" target=”_blank”><h5 class="buy-btn-h5">Buy</h5></a>
+			<button class="add-btn" (click)="addToSaved($event)">+</button>
 		</li>
 	</ul>
 </main>

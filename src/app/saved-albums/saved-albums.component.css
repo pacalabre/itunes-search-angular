@@ -1,0 +1,13 @@
+.saved-albums-btn {
+    height: 30px;
+    font-size: 15px;
+    padding: 0px 15px;
+    background-color: #D64541;
+    color: white;
+    border: 0px;
+    margin: 20px;
+}
+
+.saved-albums-btn:hover{
+	background-color: #C0392B;
+}

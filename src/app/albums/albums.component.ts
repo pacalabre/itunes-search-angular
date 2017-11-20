@@ -16,6 +16,10 @@ export class AlbumsComponent {
   	console.log(this.searchTerm);
   }
 
+  addToSaved(event){
+    console.log("saved");
+  }
+
   makeRequest(event) {
   	event.preventDefault();
   	console.log(event);
