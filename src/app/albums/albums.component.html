@@ -7,6 +7,7 @@
 	<p class="album-show-search">You are Searching for "{{searchTerm}}"</p> 
 	<ul>
 		<li class="album-li" *ngFor="let album of albums">
+			<span class="album-border"></span>
 			<h3>{{ album.artistName }}</h3>
 			<img src="{{ album.artworkUrl100}}" />
 			<p>{{ album.collectionName }}</p>

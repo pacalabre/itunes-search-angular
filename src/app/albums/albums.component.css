@@ -15,7 +15,7 @@
 .search-form-btn {
 	display: block;
 	height: 30px;
-	font-size: 20px;
+	font-size: 18px;
 	padding: 0px 15px;
 	background-color: #D64541;
 	color: white;
@@ -34,6 +34,15 @@
 .album-li {
 	margin: 20px auto;
 	text-align: center;
+}
+
+.album-border {
+	display: block;
+	border-top: solid lightgrey thin;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 25%;
+	margin-left: 25%;
 }
 
 .buy-btn {
