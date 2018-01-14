@@ -14,7 +14,15 @@ export class AlbumSearchService {
   }
 
   saveAlbum(artist, album, artwork){
-  	console.log(artist, album, artwork);
+  	// console.log(artist, album, artwork);
+  	this.savedAlbums.push({artistName: artist, collectionName: album, artworkUrl100: artwork});
+  	console.log(this.savedAlbums);
+
+  }
+
+  getSavedAlbums() {
+
+  	return this.savedAlbums;
   }
 
 }

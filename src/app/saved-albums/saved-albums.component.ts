@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AlbumSearchService } from '../album-search.service';
 
 @Component({
   selector: 'savedAlbums',
@@ -7,7 +8,11 @@ import { Component } from '@angular/core';
 })
 export class SavedAlbumsComponent {
 
-  constructor() { }
+  constructor(private service: AlbumSearchService) { }
+
+  getSavedAlbums(){
+  	this.service.getSavedAlbums();
+  }
 
 
 }

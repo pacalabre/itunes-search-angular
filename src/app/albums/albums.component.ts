@@ -21,6 +21,7 @@ export class AlbumsComponent {
     let artist = event.target.attributes[2].nodeValue;
     let album = event.target.attributes[3].nodeValue;
     let artwork = event.target.attributes[4].nodeValue;
+    console.log(event.target.attributes);
     this.service.saveAlbum(artist, album, artwork);
   }
 
