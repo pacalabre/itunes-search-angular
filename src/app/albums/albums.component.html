@@ -13,7 +13,10 @@
 			<p>{{ album.collectionName }}</p>
 			<p>{{ album.collectionPrice }}</p>
 			<a class="buy-btn" href="{{ album.collectionViewUrl }}" target=”_blank”><h5 class="buy-btn-h5">Buy</h5></a>
-			<button class="add-btn" (click)="addToSaved($event)">+</button>
+			<button [attr.data-artist]="album.artistName"
+					[attr.data-album]="album.collectionName"
+					[attr.data-artwork]="album.artworkUrl100"
+			 class="add-btn" (click)="addToSaved($event)">+</button>
 		</li>
 	</ul>
 </main>

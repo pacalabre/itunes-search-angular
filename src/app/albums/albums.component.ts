@@ -18,7 +18,10 @@ export class AlbumsComponent {
   }
 
   addToSaved(event){
-    console.log("saved");
+    let artist = event.target.attributes[2].nodeValue;
+    let album = event.target.attributes[3].nodeValue;
+    let artwork = event.target.attributes[4].nodeValue;
+    this.service.saveAlbum(artist, album, artwork);
   }
 
   makeRequest(event) {
