@@ -1,1 +1,7 @@
 <button class="saved-albums-btn" (click)="getSavedAlbums()">Saved Albums</button>
+<ul>
+	<li *ngFor="let savedAlbum of savedAlbums">
+	<h4>{{savedAlbum.artistName}}</h4>
+	<p>{{savedAlbum.collectionName}}</p>
+	</li>
+</ul>

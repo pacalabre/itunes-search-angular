@@ -9,9 +9,12 @@ import { AlbumSearchService } from '../album-search.service';
 export class SavedAlbumsComponent {
 
   constructor(private service: AlbumSearchService) { }
+  savedAlbums;
 
   getSavedAlbums(){
   	this.service.getSavedAlbums();
+  	this.savedAlbums = this.service.savedAlbums;
+  	console.log(this.savedAlbums);
   }
 
 
