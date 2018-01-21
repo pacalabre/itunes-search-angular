@@ -15,7 +15,7 @@ import { PostsComponent } from './posts/posts.component';
     AlbumsComponent,
     HeaderComponent,
     SavedAlbumsComponent,
-    PostsComponent
+    PostsComponent,
   ],
   imports: [
     BrowserModule,

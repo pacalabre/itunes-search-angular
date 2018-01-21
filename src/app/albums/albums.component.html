@@ -4,7 +4,15 @@
 </form>
 <!-- Below here will be a new component-->
 <main class="album-main">
-	<p class="album-show-search">You are Searching for "{{searchTerm}}"</p> 
+	<p class="album-show-search">You are Searching for "{{searchTerm}}"</p>
+	<section>
+		<h3>Recent Searches</h3>
+		<ul *ngFor="let recentSearch of recentSearches.reverse()">
+			<li>
+				<p>{{ recentSearch }}</p>
+			</li>
+		</ul>
+	</section> 
 	<ul>
 		<li class="album-li" *ngFor="let album of albums">
 			<span class="album-border"></span>
