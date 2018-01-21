@@ -1,21 +1,54 @@
 .saved-albums-btn {
+	position: absolute;
     height: 30px;
     font-size: 15px;
     padding: 0px 15px;
     background-color: #D64541;
     color: white;
     border: 0px;
-    margin: 20px;
+    margin: 20px 20px 0 20px;
+}
+
+.show-album-ul {
+	background-color: #fff;
+	position: absolute;
+	top: 50px;
+	left: 20px;
+	display: none;
+}
+
+.saved-albums-detail {
+	color: black;
+	padding: 3px;
+}
+
+.saved-albums-li {
+	padding: 10px;
+	border-top: thin black solid;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.saved-albums-text {
+	margin: 0 15px;
+}
+
+.saved-albums-buy-btn {
+	color: white;
+	background-color: #d64541;
+	border: none;
+}
+
+.show-saved {
+	display: block;
 }
 
 .saved-albums-btn:hover{
 	background-color: #C0392B;
 }
 
-.show-album-ul {
-	display: none;
-}
-
-.show-saved {
-	display: block;
+.saved-album-buy-btn {
+	background-color: #c0392b;
 }

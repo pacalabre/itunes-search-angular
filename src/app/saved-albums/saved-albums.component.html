@@ -1,7 +1,13 @@
 <button class="saved-albums-btn" (click)="getSavedAlbums()">Saved Albums</button>
 <ul class="show-album-ul" [class.show-saved]="showSaved">
-	<li *ngFor="let savedAlbum of savedAlbums">
-	<h4>{{savedAlbum.artistName}}</h4>
-	<p>{{savedAlbum.collectionName}}</p>
+	<section *ngIf="savedAlbums.length < 1">
+		<p class="saved-albums-detail">There are currently no saved albums.</p>
+	</section>
+	<li class="saved-albums-li" *ngFor="let savedAlbum of savedAlbums">
+		<section class="saved-albums-text">
+			<h4 class="saved-albums-detail">{{savedAlbum.artistName}}</h4>
+			<p class="saved-albums-detail">{{savedAlbum.collectionName}}</p>
+		</section>
+		<button class="saved-albums-buy-btn">Buy</button>
 	</li>
 </ul>
