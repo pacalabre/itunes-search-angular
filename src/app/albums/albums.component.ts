@@ -30,14 +30,16 @@ export class AlbumsComponent {
   makeRequest(event) {
     event.preventDefault();
     this.searchTerm = event.target[0].value;
-    this.recentSearches.push(this.searchTerm);
     console.log("recentSearches are "+ this.recentSearches);
-    this.service.getAlbums(this.searchTerm)
-    .subscribe( (data) => {
-       this.results = data;
-       this.albums =  this.results.results;
-         console.log(this.albums);
-    })
+    if(this.searchTerm) {
+      this.recentSearches.push(this.searchTerm);
+      this.service.getAlbums(this.searchTerm)
+      .subscribe( (data) => {
+         this.results = data;
+         this.albums =  this.results.results;
+           console.log(this.albums);
+      })
+    }
 
   }
 
