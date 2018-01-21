@@ -11,3 +11,11 @@
 .saved-albums-btn:hover{
 	background-color: #C0392B;
 }
+
+.show-album-ul {
+	display: none;
+}
+
+.show-saved {
+	display: block;
+}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { AlbumSearchService } from '../album-search.service';
 
 @Component({
@@ -10,11 +10,18 @@ export class SavedAlbumsComponent {
 
   constructor(private service: AlbumSearchService) { }
   savedAlbums;
+  @Input('showSaved')showSaved = false;
 
   getSavedAlbums(){
+    this.buttonClicked();
   	this.service.getSavedAlbums();
   	this.savedAlbums = this.service.savedAlbums;
   	console.log(this.savedAlbums);
+  }
+
+  buttonClicked() {
+    console.log(this.showSaved);
+    this.showSaved = !this.showSaved;
   }
 
 
