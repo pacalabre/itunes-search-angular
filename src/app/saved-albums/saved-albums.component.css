@@ -52,10 +52,7 @@
 	display: block;
 }
 
-.saved-albums-btn:hover{
+.saved-albums-btn:hover, .saved-albums-buy-btn:hover{
 	background-color: #C0392B;
 }
 
-.saved-album-buy-btn {
-	background-color: #c0392b;
-}
