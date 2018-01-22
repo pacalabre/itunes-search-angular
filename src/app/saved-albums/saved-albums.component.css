@@ -11,6 +11,7 @@
 
 .show-album-ul {
 	background-color: #fff;
+	border: solid black thin;
 	position: absolute;
 	top: 50px;
 	left: 20px;
@@ -38,7 +39,9 @@
 .saved-albums-buy-btn {
 	color: white;
 	background-color: #d64541;
+	font-size: 15px;
 	border: none;
+	padding: 5px 20px;
 }
 
 .show-saved {

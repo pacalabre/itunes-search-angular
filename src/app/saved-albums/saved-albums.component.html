@@ -4,6 +4,7 @@
 		<p class="saved-albums-detail">There are currently no saved albums.</p>
 	</section>
 	<li class="saved-albums-li" *ngFor="let savedAlbum of savedAlbums">
+		<img src={{savedAlbum.artworkUrl100}} />
 		<section class="saved-albums-text">
 			<h4 class="saved-albums-detail">{{savedAlbum.artistName}}</h4>
 			<p class="saved-albums-detail">{{savedAlbum.collectionName}}</p>
