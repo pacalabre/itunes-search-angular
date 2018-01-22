@@ -4,13 +4,13 @@
 </form>
 <!-- Below here will be a new component-->
 <main class="album-main">
-	<section *ngIf="searchTerm.length > 0">
+	<section *ngIf="searchTerm">
 		<p class="album-show-search">You are Searching for "{{searchTerm}}"</p>
 	</section>
 	<section *ngIf="recentSearches.length > 0">
 		<h3>Recent Searches</h3>
-		<ul *ngFor="let recentSearch of recentSearches.reverse()">
-			<li>
+		<ul >
+			<li *ngFor="let recentSearch of recentSearches.reverse()">
 				<p> {{ recentSearch }}</p>
 			</li>
 		</ul>
