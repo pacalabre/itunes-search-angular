@@ -32,7 +32,7 @@ export class AlbumsComponent {
     this.searchTerm = event.target[0].value;
     console.log("recentSearches are "+ this.recentSearches);
     if(this.searchTerm) {
-      this.recentSearches.push(this.searchTerm);
+      this.recentSearches.push(this.searchTerm.toLowerCase());
       this.service.getAlbums(this.searchTerm)
       .subscribe( (data) => {
          this.results = data;

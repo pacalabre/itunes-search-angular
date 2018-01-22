@@ -11,9 +11,9 @@
 
 .show-album-ul {
 	background-color: #fff;
-	border: solid black .2px;
+	border: solid lightgrey .2px;
 	position: absolute;
-	top: 50px;
+	top: 55px;
 	left: 20px;
 	display: none;
 }
@@ -25,10 +25,11 @@
 
 .saved-albums-li {
 	padding: 10px;
-	border-top: thin black solid;
+	border-bottom: thin lightgrey solid;
+    margin: 0px 25px;
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: center;
 }
 
