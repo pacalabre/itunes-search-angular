@@ -11,7 +11,7 @@
 
 .show-album-ul {
 	background-color: #fff;
-	border: solid black thin;
+	border: solid black .2px;
 	position: absolute;
 	top: 50px;
 	left: 20px;
@@ -34,6 +34,10 @@
 
 .saved-albums-text {
 	margin: 0 15px;
+}
+
+.no-saved-albums-text {
+	padding: 20px;
 }
 
 .saved-albums-buy-btn {

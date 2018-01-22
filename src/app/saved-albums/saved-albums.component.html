@@ -1,7 +1,7 @@
 <button class="saved-albums-btn" (click)="getSavedAlbums()">Saved Albums</button>
 <ul class="show-album-ul" [class.show-saved]="showSaved">
 	<section *ngIf="savedAlbums < 1">
-		<p class="saved-albums-detail">There are currently no saved albums.</p>
+		<p class="saved-albums-detail no-saved-albums-text">There are currently no saved albums.</p>
 	</section>
 	<li class="saved-albums-li" *ngFor="let savedAlbum of savedAlbums">
 		<img src={{savedAlbum.artworkUrl100}} />
