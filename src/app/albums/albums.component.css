@@ -31,6 +31,25 @@
 	margin: 20px auto;
 }
 
+.recent-searches-section {
+	margin-top: -10px;
+}
+
+.recent-searches-h3 {
+	color: #D64541;
+	font-weight: 500;
+}
+
+.recent-searches-ul {
+	display: flex;
+	justify-content: center;
+}
+
+.recent-searches-p {
+	flex-direction: row;
+
+}
+
 .album-li {
 	margin: 20px auto;
 	text-align: center;

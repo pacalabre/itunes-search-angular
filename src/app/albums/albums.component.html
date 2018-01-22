@@ -7,11 +7,13 @@
 	<section *ngIf="searchTerm">
 		<p class="album-show-search">You are Searching for "{{searchTerm}}"</p>
 	</section>
-	<section *ngIf="recentSearches.length > 0">
-		<h3>Recent Searches</h3>
-		<ul >
-			<li *ngFor="let recentSearch of recentSearches.reverse()">
-				<p> {{ recentSearch }}</p>
+	<section class="recent-searches-section" *ngIf="recentSearches.length > 0">
+		<h3 class="recent-searches-h3">Recent Searches</h3>
+		<ul class="recent-searches-ul">
+			<li *ngFor="let recentSearch of recentSearches.reverse(); let i = index">
+				<div *ngIf="i< 5">
+					<p class="recent-searches-p"> {{ recentSearch }}</p>
+				</div>
 			</li>
 		</ul>
 	</section> 

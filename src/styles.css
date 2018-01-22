@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,500');
 
 /* CSS Reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -58,5 +58,9 @@ table {
 }
  h1, h2, h3, h4, h5, h6, p {
  	padding: 7px;
+ }
+
+ button, input, h1,h2,h3, h4,h5,p {
+ 	font-weight: 100;
  }
 
