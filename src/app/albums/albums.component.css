@@ -23,6 +23,11 @@
 	margin: 5px auto;
 }
 
+.loader-circle {
+	display: inline-flex;
+    margin-top: 50px;
+}
+
 .album-main {
 	text-align: center;
 }

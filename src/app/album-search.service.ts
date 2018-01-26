@@ -10,6 +10,7 @@ export class AlbumSearchService {
    savedAlbums = [];
 
   getAlbums(searchTerm) {
+    console.log(this.http.get( this.url + searchTerm ));
   	return this.http.get( this.url + searchTerm + '&entity=album');
   }
 

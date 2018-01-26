@@ -12,6 +12,7 @@ export class AlbumsComponent {
   results: any;
   albums = [];
   recentSearches=[];
+  loading: boolean;
 
 
   constructor(private service: AlbumSearchService) {}
@@ -29,12 +30,14 @@ export class AlbumsComponent {
 
   makeRequest(event) {
     event.preventDefault();
+    this.loading = true;
     this.searchTerm = event.target[0].value;
     console.log("recentSearches are "+ this.recentSearches);
     if(this.searchTerm) {
       this.recentSearches.push(this.searchTerm.toLowerCase());
       this.service.getAlbums(this.searchTerm)
       .subscribe( (data) => {
+        this.loading = false;
          this.results = data;
          this.albums =  this.results.results;
            console.log(this.albums);
