@@ -41,6 +41,9 @@ export class AlbumsComponent {
          this.results = data;
          this.albums =  this.results.results;
            console.log(this.albums);
+      },
+      error => {
+        console.log(error);
       })
     }
 

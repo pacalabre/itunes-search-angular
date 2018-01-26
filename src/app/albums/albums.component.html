@@ -18,19 +18,24 @@
 		</ul>
 	</section> 
 	<div class="loader-circle" *ngIf="loading"></div>
-	<ul *ngIf="!loading">
-		<li class="album-li" *ngFor="let album of albums">
-			<span class="album-border"></span>
-			<h3>{{ album.artistName }}</h3>
-			<img src="{{ album.artworkUrl100}}" />
-			<p>{{ album.collectionName }}</p>
-			<p>{{ album.collectionPrice }}</p>
-			<a class="buy-btn" href="{{ album.collectionViewUrl }}" target=”_blank”><h5 class="buy-btn-h5">Buy</h5></a>
-			<button [attr.data-artist]="album.artistName"
-					[attr.data-album]="album.collectionName"
-					[attr.data-artwork]="album.artworkUrl100"
-			 class="add-btn" (click)="addToSaved($event)">+</button>
-		</li>
-	</ul>
+	<section *ngIf="!loading">
+		<ul>
+			<li class="album-li" *ngFor="let album of albums">
+				<span class="album-border"></span>
+				<h3>{{ album.artistName }}</h3>
+				<img src="{{ album.artworkUrl100}}" />
+				<p>{{ album.collectionName }}</p>
+				<p>{{ album.collectionPrice }}</p>
+				<a class="buy-btn" href="{{ album.collectionViewUrl }}" target=”_blank”><h5 class="buy-btn-h5">Buy</h5></a>
+				<button [attr.data-artist]="album.artistName"
+						[attr.data-album]="album.collectionName"
+						[attr.data-artwork]="album.artworkUrl100"
+				 class="add-btn" (click)="addToSaved($event)">+</button>
+			</li>
+		</ul>
+		<section *ngIf="albums.length === 0 && searchTerm.length > 0">
+			<p class="no-results-text">No results found...</p>
+		</section>
+	</section>
 </main>
 

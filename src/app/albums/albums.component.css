@@ -85,6 +85,13 @@
 	background: white;
 }
 
+.no-results-text {
+	font-size: 20px;
+    margin-top: 40px;
+}
+
+
+/* Hovers */
 .add-btn:hover {
 	color: #007aff;
 	border-color: #007aff;
@@ -94,7 +101,7 @@
 	background-color: #C0392B;
 }
 
-
+/* Media Queries */
 @media only screen and (min-width: 767px) {
 
 	.search-form-input {
