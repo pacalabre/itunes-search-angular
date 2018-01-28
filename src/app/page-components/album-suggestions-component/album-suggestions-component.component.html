@@ -1,6 +1,13 @@
 <main class="album-suggestions-main">
 	<input class="search-input" type="text" name="" placeholder="Filter Albums">
 	<ul>
-		<li></li>
+		<li class="album-li" *ngFor="let album of albums">
+			<span class="album-border"></span>
+			<h3>{{ album.artistName }}</h3>
+			<img src="{{ album.artworkUrl100}}" />
+			<p>{{ album.collectionName }}</p>
+			<p>{{ album.collectionPrice }}</p>
+			<a class="buy-btn" href="{{ album.collectionViewUrl }}" target=”_blank”><h5 class="buy-btn-h5">Buy</h5></a>
+		</li>
 	</ul>
 </main>

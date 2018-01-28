@@ -75,6 +75,30 @@ table {
 	border: solid thin lightgrey;
 }
 
+.album-li {
+	margin: 20px auto;
+	text-align: center;
+}
+
+.album-border {
+	display: block;
+	border-top: solid lightgrey thin;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 25%;
+	margin-left: 25%;
+}
+
+.buy-btn {
+	color: white;
+}
+
+.buy-btn-h5 {
+	background: #D64541;
+    display: inline-block;
+    padding: 5px 20px;
+}
+
  /* Loaders */
 .loader-circle {
   border: 5px solid #ddd;
@@ -97,7 +121,18 @@ table {
   100% { -webkit-transform: rotate(360deg); }
 }
 
-/* Media Queries */
+/*** Hovers ***/
+
+.add-btn:hover {
+	color: #007aff;
+	border-color: #007aff;
+}
+
+.buy-btn-h5:hover, .search-form-btn:hover {
+	background-color: #C0392B;
+}
+
+/*** Media Queries ***/
 @media only screen and (min-width: 767px) {
 
 	.search-input {
