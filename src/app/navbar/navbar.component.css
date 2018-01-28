@@ -1,0 +1,21 @@
+.nav-bar {
+	background-color: #34495E;
+}
+
+.nav-bar > ul {
+	display: flex;
+	justify-content: left;
+}
+
+.nav-bar > ul > li {
+	margin: 30px 50px;
+}
+
+.nav-bar > ul > li > a{
+	color: white;
+	text-decoration: none;
+}
+
+.nav-bar > ul > li > a:visited {
+	color: white;
+}
