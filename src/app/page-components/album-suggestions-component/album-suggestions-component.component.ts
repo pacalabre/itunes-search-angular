@@ -13,12 +13,6 @@ export class AlbumSuggestionsComponentComponent {
   constructor( private service: AlbumSearchService ) {
   	this.service.getSavedAlbums();
   	this.albums = this.service.savedAlbums;
-  	console.log("this albums are: " + this.albums);
    }
-
-   // filterAlbums(event) {
-   // 	this.filterTerm = event.target.value;
-   // }
-
 
 }

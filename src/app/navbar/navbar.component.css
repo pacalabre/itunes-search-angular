@@ -7,15 +7,23 @@
 	justify-content: left;
 }
 
-.nav-bar > ul > li {
-	margin: 30px 50px;
+.nav-bar-li  {
+	margin: 10px 50px;
+	padding: 15px;
 }
 
 .nav-bar > ul > li > a{
 	color: white;
 	text-decoration: none;
+	padding: 7px 10px;
 }
 
-.nav-bar > ul > li > a:visited {
+.nav-bar > ul > li > a:visited, .new-release-label {
 	color: white;
 }
+
+.nav-bar-li:hover {
+	background-color: #D64541;
+	transition: .25s;
+}
+
