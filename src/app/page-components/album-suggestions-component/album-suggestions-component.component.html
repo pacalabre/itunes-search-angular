@@ -1,7 +1,7 @@
 <main class="album-suggestions-main">
 	<h1>Suggested Albums</h1>
 	<input class="search-input" placeholder="Filter by Artists" [(ngModel)]="searchText">
-	<h2 *ngIf="albums.length === 0"> There are currently no suggested albums.</h2>
+	<h2 class="no-albums" *ngIf="albums.length === 0"> There are currently no suggested albums.</h2>
 	<ul>
 		<li class="album-li" *ngFor="let album of albums | filter : searchText">
 			<span class="album-border"></span>
