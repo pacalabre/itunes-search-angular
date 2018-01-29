@@ -1,6 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AlbumSearchService } from './album-search.service';
 import { AppComponent } from './app.component';
@@ -12,6 +13,7 @@ import { HomeComponentComponent } from './page-components/home-component/home-co
 import { AlbumSuggestionsComponentComponent } from './page-components/album-suggestions-component/album-suggestions-component.component';
 import { NotFoundComponent } from './page-components/not-found/not-found.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FilterPipe } from './pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -24,10 +26,12 @@ import { NavbarComponent } from './navbar/navbar.component';
     AlbumSuggestionsComponentComponent,
     NotFoundComponent,
     NavbarComponent,
+    FilterPipe,
 
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     HttpClientModule,
     RouterModule.forRoot([
      { path:'', component:HomeComponentComponent },

@@ -1,7 +1,8 @@
 <main class="album-suggestions-main">
-	<input class="search-input" type="text" name="" placeholder="Filter Albums">
+	<h1>Suggested Albums</h1>
+	<input class="search-input" placeholder="Filter by Artists" [(ngModel)]="searchText">
 	<ul>
-		<li class="album-li" *ngFor="let album of albums">
+		<li class="album-li" *ngFor="let album of albums | filter : searchText">
 			<span class="album-border"></span>
 			<h3>{{ album.artistName }}</h3>
 			<img src="{{ album.artworkUrl100}}" />

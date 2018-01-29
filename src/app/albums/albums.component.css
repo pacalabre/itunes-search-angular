@@ -3,7 +3,6 @@
 	margin-top: 50px;
 }
 
-
 .search-form-btn {
 	display: block;
 	height: 30px;
@@ -49,8 +48,11 @@
 
 .add-btn {
 	display: block;
-	margin: 7px auto;
+	margin: 15px auto;
 	background: white;
+	border-radius: 0px;
+	font-size: 12px;
+
 }
 
 .no-results-text {
