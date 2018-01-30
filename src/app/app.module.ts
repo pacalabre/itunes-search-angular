@@ -9,11 +9,12 @@ import { AlbumsComponent } from './albums/albums.component';
 import { HeaderComponent } from './header/header.component';
 import { SavedAlbumsComponent } from './saved-albums/saved-albums.component';
 import { PostsComponent } from './posts/posts.component';
-import { HomeComponentComponent } from './page-components/home-component/home-component.component';
-import { AlbumSuggestionsComponentComponent } from './page-components/album-suggestions-component/album-suggestions-component.component';
+import { HomeComponent } from './page-components/home-component/home.component';
+import { AlbumSuggestionsComponent } from './page-components/album-suggestions-component/album-suggestions.component';
 import { NotFoundComponent } from './page-components/not-found/not-found.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FilterPipe } from './pipes/filter.pipe';
+import { NewReleasesComponent } from './page-components/new-releases/new-releases.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +23,12 @@ import { FilterPipe } from './pipes/filter.pipe';
     HeaderComponent,
     SavedAlbumsComponent,
     PostsComponent,
-    HomeComponentComponent,
-    AlbumSuggestionsComponentComponent,
+    HomeComponent,
+    AlbumSuggestionsComponent,
     NotFoundComponent,
     NavbarComponent,
     FilterPipe,
+    NewReleasesComponent,
 
   ],
   imports: [
@@ -34,8 +36,9 @@ import { FilterPipe } from './pipes/filter.pipe';
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot([
-     { path:'', component:HomeComponentComponent },
-     { path:'suggested-albums', component:AlbumSuggestionsComponentComponent },
+     { path:'', component:HomeComponent },
+     { path:'suggested-albums', component:AlbumSuggestionsComponent },
+     { path: 'new-releases', component: NewReleasesComponent },
      { path:'**', component: NotFoundComponent }
 
     ])

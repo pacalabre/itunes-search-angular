@@ -4,10 +4,10 @@ import { AlbumSearchService } from '../../album-search.service';
 
 @Component({
   selector: 'app-album-suggestions-component',
-  templateUrl: './album-suggestions-component.component.html',
-  styleUrls: ['./album-suggestions-component.component.css']
+  templateUrl: './album-suggestions.component.html',
+  styleUrls: ['./album-suggestions.component.css']
 })
-export class AlbumSuggestionsComponentComponent {
+export class AlbumSuggestionsComponent {
   albums;
 
   constructor( private service: AlbumSearchService ) {
