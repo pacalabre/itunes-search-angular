@@ -1,16 +1,17 @@
 <nav class="nav-bar">
 	<ul>
-		<li class="nav-bar-li"><a routerLink="/">Home</a></li>
-		<li class="nav-bar-li"><a routerLink="/suggested-albums">Suggested Albums</a></li>
-		<li class="nav-bar-li new-release-label"><a routerLink="/new-releases">New Releases</a>
-			<!-- <ul class="new-release-ul"> 
-				<li>Hip Hop</li>
-				<li>Alternative</li>
-				<li>Electronic</li>
-				<li>Pop</li>
-				<li>R&B</li>
-			</ul> -->
+		<li class="nav-bar-li"><a  routerLink="/">Home</a></li>
+		<li class="nav-bar-li"><a routerLinkActive="active-link" routerLink="/suggested-albums">Suggested Albums</a></li>
+		<li class="nav-bar-li nav-bar-new-release"><a routerLinkActive="active-link" routerLink="/new-releases">New Releases</a>
+			<ul class="new-release-ul"> 
+				<li><a routerLink="/new-releases/hiphop">Hip Hop</a></li>
+				<li><a routerLink="/new-releases/alternative">Alternative</a></li>
+				<li><a routerLink="/new-releases/electronic">Electronic</a></li>
+				<li><a routerLink="/new-releases/pop">Pop</a></li>
+				<li><a routerLink="/new-releases/rb%2Bsoul">R&B & Soul</a></li>
+				<li><a routerLink="/new-releases/folk">Folk</a></li>
+				<li><a routerLink="/new-releases/jazz">Jazz</a></li>
+			</ul>
 		</li>
-
 	</ul>
 </nav>

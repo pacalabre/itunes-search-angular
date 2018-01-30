@@ -12,18 +12,46 @@
 	padding: 15px;
 }
 
-.nav-bar > ul > li > a{
+.nav-bar > ul > li > a {
 	color: white;
 	text-decoration: none;
 	padding: 7px 10px;
 }
 
-.nav-bar > ul > li > a:visited, .new-release-label {
+.nav-bar > ul > li > a:visited {
 	color: white;
+}
+
+.nav-bar-new-release {
+
+}
+
+.new-release-ul {
+	position: absolute;
+    top: 56px;
+    background-color: white;
+    padding: 10px 15px;
+    margin: 0px 0 0 -15px;
+    transition: visibility 0s;
+    visibility: hidden;
+}
+
+.active-link {
+	border-bottom: solid #D64541;
 }
 
 .nav-bar-li:hover {
 	background-color: #D64541;
 	transition: .25s;
 }
+
+.nav-bar-new-release:hover > .new-release-ul {
+	transition: visibility .35s;
+	visibility: visible;
+}
+
+.new-release-ul li:hover {
+	color: #D64541;
+}
+
 

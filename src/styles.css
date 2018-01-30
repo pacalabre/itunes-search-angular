@@ -69,6 +69,11 @@ table {
     margin: 50px;
  }
 
+ a {
+ 	color: inherit;
+ 	text-decoration: none;
+ }
+
 
 
  /*** Global Components ***/
