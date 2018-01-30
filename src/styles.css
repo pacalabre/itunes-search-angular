@@ -74,9 +74,12 @@ table {
  	text-decoration: none;
  }
 
-
-
  /*** Global Components ***/
+
+ .main {
+	text-align: center;
+	margin-top: 50px;
+ }
 
  .search-input {
 	height: 30px;
