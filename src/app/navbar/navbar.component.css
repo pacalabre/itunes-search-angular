@@ -1,5 +1,5 @@
 .nav-bar {
-	background-color: #34495E;
+	background-color: white;
 }
 
 .nav-bar > ul {
@@ -9,40 +9,45 @@
 
 .nav-bar-li  {
 	margin: 10px 50px;
-	padding: 15px;
+	padding: 10px;
+	font-size: 18px;
+	color: #000;
 }
 
 .nav-bar > ul > li > a {
-	color: white;
 	text-decoration: none;
 	padding: 7px 10px;
 }
 
-.nav-bar > ul > li > a:visited {
-	color: white;
-}
-
-.nav-bar-new-release {
-
+.new-release-li-a {
+	color: black;
 }
 
 .new-release-ul {
 	position: absolute;
-    top: 56px;
+    top: 48px;
     background-color: white;
     padding: 10px 15px;
-    margin: 0px 0 0 -15px;
+    margin: 0px 0 0 -10px;
     transition: visibility 0s;
     visibility: hidden;
 }
 
 .active-link {
-	border-bottom: solid #D64541;
+	border-bottom: solid #D64541 1.5px;
 }
 
-.nav-bar-li:hover {
+ .nav-bar-li:hover {
 	background-color: #D64541;
 	transition: .25s;
+}
+
+.new-release-li-a:hover {
+	color: #D64541;
+}
+
+.nav-bar-li:hover  .nav-bar-li > a, .nav-bar > ul > li > a:hover, .nav-bar-li:hover {
+	color: white;
 }
 
 .nav-bar-new-release:hover > .new-release-ul {
@@ -53,5 +58,6 @@
 .new-release-ul li:hover {
 	color: #D64541;
 }
+
 
 

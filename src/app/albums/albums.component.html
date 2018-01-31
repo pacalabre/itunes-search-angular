@@ -30,7 +30,7 @@
 				<button [attr.data-artist]="album.artistName"
 						[attr.data-album]="album.collectionName"
 						[attr.data-artwork]="album.artworkUrl100"
-				 class="add-btn" (click)="addToSaved($event)">Add to Suggested +</button>
+				 class="add-btn" (click)="addToSaved($event)">Add +</button>
 			</li>
 		</ul>
 		<section *ngIf="albums.length === 0 && searchTerm.length > 0">

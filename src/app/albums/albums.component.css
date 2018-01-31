@@ -48,11 +48,13 @@
 
 .add-btn {
 	display: block;
-	margin: 15px auto;
-	background: white;
-	border-radius: 0px;
-	font-size: 12px;
-
+    margin: 15px auto;
+    background: white;
+    border-radius: 0px;
+    font-size: 12px;
+    border: solid thin grey;
+    border-radius: 50%;
+    height: 45px;
 }
 
 .no-results-text {
@@ -63,5 +65,10 @@
 .search-form-btn:hover {
 	background-color: #C0392B;
 	border-color: #C0392B;
+}
+
+.add-btn:hover {
+	border: solid thin cornflowerblue;
+	color: cornflowerblue;
 }
 
