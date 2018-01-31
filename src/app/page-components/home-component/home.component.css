@@ -1,0 +1,6 @@
+.app-header {
+	background-image: url(../../../assets/headphones.jpg);
+	background-position: center;
+	color: white;
+	background-size: cover;
+}
