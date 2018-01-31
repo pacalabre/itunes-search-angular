@@ -9,6 +9,7 @@ import { AlbumSearchService } from '../../album-search.service';
 })
 export class AlbumSuggestionsComponent {
   albums;
+  suggestedAlbums = true;
 
   constructor( private service: AlbumSearchService ) {
   	this.service.getSavedAlbums();
