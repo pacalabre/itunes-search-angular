@@ -1,3 +1,28 @@
+.logo {
+	border: solid #D64541;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    display: block;
+    font-size: 12px;
+    margin: 10px 50px;
+    padding: 10px;
+    display: flex;
+}
+
+.logo-span {
+	color: #D64541;
+}
+
+.logo-a {
+	font-size: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	margin: 0; 
+}
+
 .nav-bar {
 	background-color: white;
 }
@@ -12,10 +37,12 @@
 	padding: 10px;
 	font-size: 18px;
 	color: #000;
-	font-weight: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.nav-bar > ul > li > a {
+.nav-bar-links {
 	text-decoration: none;
 	padding: 7px 10px;
 }
@@ -26,16 +53,21 @@
 
 .new-release-ul {
 	position: absolute;
-    top: 48px;
+    top: 68px;
     background-color: white;
     padding: 10px 15px;
-    margin: 0px 0 0 -10px;
+    margin: 0px 0 0 -17px;
     transition: visibility 0s;
     visibility: hidden;
 }
 
 .active-link {
 	border-bottom: solid #D64541 1.5px;
+}
+
+.logo:hover {
+	color: white;
+	background-color: #D64541;
 }
 
  .nav-bar-li:hover {
@@ -47,7 +79,7 @@
 	color: #D64541;
 }
 
-.nav-bar-li:hover  .nav-bar-li > a, .nav-bar > ul > li > a:hover, .nav-bar-li:hover {
+.nav-bar-li:hover  .nav-bar-li > a, .nav-bar-links:hover, .nav-bar-li:hover {
 	color: white;
 }
 
