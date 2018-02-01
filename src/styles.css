@@ -80,14 +80,19 @@ table {
 	background-position: center;
 	color: white;
 	background-size: cover;
+	padding: 180px 0px;
+	text-align: center;
 }
 
 .app-header-h2 {
 	text-align: center;
-	font-size: 3rem;
-	padding: 180px 0px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
+    font-size: 3rem;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    display: inline-flex;
+    justify-content: center;
+    border: solid #D64541 8px;
+    font-weight: 400;
 }
 
  .main {
