@@ -1,6 +1,6 @@
 .logo {
 	border: solid #D64541;
-    border-radius: 50%;
+	background-color: #D64541;
     height: 32px;
     width: 32px;
     display: block;
@@ -8,6 +8,7 @@
     margin: 10px 50px;
     padding: 10px;
     display: flex;
+    color: white;
 }
 
 .logo-span {
@@ -67,8 +68,8 @@
 }
 
 .logo:hover {
-	color: white;
-	background-color: #D64541;
+	background-color: #C0392B;
+	border-color: #C0392B;
 }
 
  .nav-bar-li:hover {
