@@ -76,6 +76,20 @@ table {
 
  /*** Global Components ***/
 
+ .app-header {
+	background-position: center;
+	color: white;
+	background-size: cover;
+}
+
+.app-header-h2 {
+	text-align: center;
+	font-size: 3rem;
+	padding: 180px 0px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
  .main {
 	text-align: center;
 	margin-top: 50px;
