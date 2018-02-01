@@ -45,7 +45,7 @@
 
 .nav-bar-links {
 	text-decoration: none;
-	padding: 7px 10px;
+	padding: 7px 3px;
 }
 
 .new-release-li-a {
@@ -57,14 +57,14 @@
     top: 68px;
     background-color: white;
     padding: 10px 15px;
-    margin: 0px 0 0 -17px;
+    margin: 0px 0 0 -10px;
     transition: visibility 0s;
     visibility: hidden;
     border-top: solid thin black;
 }
 
 .active-link {
-	border-bottom: solid #D64541 1.5px;
+	border-bottom: solid #D64541 5px;
 }
 
 .logo:hover {
