@@ -59,6 +59,7 @@
     margin: 0px 0 0 -17px;
     transition: visibility 0s;
     visibility: hidden;
+    border-top: solid thin black;
 }
 
 .active-link {
