@@ -1,5 +1,27 @@
 # ItunesAngular
 
+
+Possible API's:
+https://www.whosampled.com/metadata/
+https://developer.spotify.com
+How to get specific years:
+https://developer.spotify.com/documentation/web-api/reference/search/search/
+
+
+/Hook up to spotify API?
+
+/Home page = new releases
+click on album from new releases to get to album page with sample. Also link to artist page
+
+/Suggested albums based on users feedback
+
+/search artists page
+- discogs API, albums on vinyl
+
+/my albums
+- list of saved albums
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
 
 ## Development server
